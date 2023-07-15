@@ -8,11 +8,11 @@ const WorldSection = () => {
       <div className='world-section-container'>
         <div className='world-section-content '>
           <p>Recovered:</p>
-          <p className='first-number'>6748</p>
+          <p className='first-number'>67482</p>
         </div>
         <div className='world-section-content '>
           <p>Deaths:</p>
-          <p className='second-number'>20698191</p>
+          <p className='second-number'>206981911</p>
         </div>
         <div className='world-section-content '>
           <p>ActiveCases:</p>
