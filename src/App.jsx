@@ -6,11 +6,12 @@ import CountryStats from './components/CountryStats'
 import AboutUs from './components/AboutUs'
 import Navbar from './components/Home/navbar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import CoutryStats from './components/CountryStats'
+
 
 function App() {
 
   return (
+    
     <>
     <Navbar />
     <Routes>
@@ -19,7 +20,6 @@ function App() {
       <Route path='/countrystats' element={<CountryStats />}></Route>
       <Route path='/aboutus' element={<AboutUs />}></Route>
     </Routes>
-  
     
     </>
   )
