@@ -1,0 +1,51 @@
+.world-section{
+    
+    h1{
+        text-align: center;
+        margin-bottom: 5rem;
+        font-size: 3rem;
+        font-weight: 100;
+        color: darkred;
+    }
+}
+
+.world-section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.world-section-content{
+    margin: 0 4rem;
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75);
+    height: 12vh;
+    width: 100vh;
+    border: 1px solid black;
+    border-radius: 7%;
+    padding: 3rem 0.2rem;
+    cursor: pointer;
+    
+    
+    .last-stats{
+        font-weight: 800;
+        margin-top: 40px;
+    }
+
+    .first-number{
+        color: green;
+        font-weight: 800;
+    }
+
+    .second-number{
+        color: red;
+        font-weight: 800;
+    }
+
+    .third-number{
+        color: blue;
+        font-weight: 800;
+    }
+}
