@@ -6,19 +6,19 @@ const WorldSection = () => {
     <div className='world-section'>
       <h1>World Stats</h1>
       <div className='world-section-container'>
-        <div className='world-section-content card'>
+        <div className='world-section-content '>
           <p>Recovered:</p>
           <p className='first-number'>6748</p>
         </div>
-        <div className='world-section-content card'>
+        <div className='world-section-content '>
           <p>Deaths:</p>
           <p className='second-number'>20698191</p>
         </div>
-        <div className='world-section-content card'>
+        <div className='world-section-content '>
           <p>ActiveCases:</p>
-          <p className='third-number'>47959971</p>
+          <p className='third-number'>479599711</p>
         </div>
-        <div className='world-section-content card' >
+        <div className='world-section-content ' >
           <h3 className='last-stats'>Country Stats</h3>
         </div>
       </div>

@@ -20,7 +20,6 @@ function App() {
       <Route path='/countrystats' element={<CountryStats />}></Route>
       <Route path='/aboutus' element={<AboutUs />}></Route>
     </Routes>
-  
     
     </>
   )
