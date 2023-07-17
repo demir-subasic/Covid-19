@@ -5,7 +5,6 @@ import './index.scss'
 const Home = () => {
   return (
     <div className='hero'>
-      
     </div>
   )
 }
