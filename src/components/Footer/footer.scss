@@ -4,15 +4,20 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 5rem;
 
     h3{
         font-size: 20px;
         font-weight: 100;
+        margin-bottom: 2rem;
     }
    
     .footer-content{
-        margin-bottom:  1rem;
+        margin-bottom:  2rem;
+
+        a:hover{
+            color: red;
+            transition: 0.2s;            
+        }
 
         a{
             margin: 0 1rem;
@@ -27,6 +32,11 @@
     .footer-icons{
         display: flex;
         margin-bottom: 2rem;
+
+        img:hover{
+            transform: scale(2);
+            transition: 0.4s;
+        }
     
         img{
             margin: 0 1rem;
