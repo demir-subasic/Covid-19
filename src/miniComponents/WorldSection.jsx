@@ -1,5 +1,6 @@
 import React from 'react';
 import './worldSection.scss';
+import {Link} from 'react-router-dom'
 
 const WorldSection = () => {
   return (
@@ -19,7 +20,7 @@ const WorldSection = () => {
           <p className='third-number'>479599711</p>
         </div>
         <div className='world-section-content ' >
-          <h3 className='last-stats'>Country Stats</h3>
+        <Link style={{textDecoration: 'none', color: 'black', fontWeight: 'bold'}} to='/countrystats'><h3>Country stats</h3></Link>
         </div>
       </div>
     </div>
