@@ -5,6 +5,7 @@ import CountrySelect from '../../miniComponents/ListSearch'
 import MaterialUIPickers from '../../miniComponents/PickDate'
 import StateCard from '../../miniComponents/CoutryStatsCard';
 
+
 //get Date
 const justDay =
   new Date().getDate() >= 10
@@ -109,7 +110,13 @@ function CountryCovidStats() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="flex justify-center gap-2">
+      <div className="flex justify-center gap-2" 
+      style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          margin: "2rem 0 10rem 0",
+        }}>
         <CountrySelect
           countryNameFunc={(nameOfState, imgOfState) =>
             setCountryName((prev) => {
