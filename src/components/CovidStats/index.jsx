@@ -5,6 +5,7 @@ import CovidStatsCard from '../../miniComponents/CovidStatsCard/CovidStatsCard'
 import Stack from '@mui/material/Stack'
 import countries from '../common/country.json'
 import Pagination from '@mui/material/Pagination'
+import Footer from '../Footer/footer'
 
 const CovidStats = () => {
   const [covidStats, setCovidStats] = useState([]);
@@ -60,12 +61,13 @@ const CovidStats = () => {
         ))
         .slice(visitedPage, visitedPage + page)}
 
-        <Stack spacing={2}>
+        <Stack spacing={2} style={{marginBottom: '65px'}}>
           <Pagination page={activePage}
           count = {totalPages}
           onChange={handleChange}
           ></Pagination>
         </Stack>
+        <Footer />
     </div>
   );
 }
