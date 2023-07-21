@@ -14,11 +14,11 @@ const CovidStatsCard = ({
     countryImg,
 }) => {
   return (
+    <div className='covid-stats-full-page'>
     <Box
     sx={{
       minWidth: 275,
       width: 1000,
-      border: "1px solid rgb(239, 110, 110);",
       borderRadius: "5px",
       cursor: "default",
     }}
@@ -38,26 +38,26 @@ const CovidStatsCard = ({
       style={{}}
     >
       <CardContent>
-        <Typography variant="h6" component="div" className="relative left-6">
-          Continent: <span className="relative left-3">{continent}</span>
+        <Typography variant="h6" component="div" className="relative left-6 continent-div">
+          Continent: <span className="relative left-3 continent">{continent}</span>
         </Typography>
-        <Typography variant="h5" component="div" className="relative left-6">
-          Country: <span className="relative left-3">{countryName}</span>
+        <Typography variant="h5" component="div" className="relative left-6 country-div">
+          Country: <span className="relative left-3 country">{countryName}</span>
         </Typography>
-        <div className="flex justify-start gap-6">
-          <div className="relative left-6 py-4 text-lg">
+        <div className="flex justify-start gap-6 second-row">
+          <div className="relative left-6 py-4 text-lg population">
             Population:{" "}
             <span className="relative left-3 text-xl text-green-500 p-1 border-double border-4 border-green-700 rounded-lg">
               {population}
             </span>
           </div>
-          <div className="relative left-6 py-4 text-lg">
+          <div className="relative left-6 py-4 text-lg new-cases">
             New Cases:{" "}
             <span className="relative left-3 text-xl text-violet-500 p-1 border-double border-4 border-violet-700 rounded-lg">
               {newCases}
             </span>
           </div>
-          <div className="relative left-6 py-4 text-lg">
+          <div className="relative left-6 py-4 text-lg deaths">
             Deaths:{" "}
             <span className="relative left-3 text-xl text-red-500 p-1 border-double border-4 border-red-700 rounded-lg">
               {deaths}
@@ -67,6 +67,7 @@ const CovidStatsCard = ({
       </CardContent>
     </Card>
   </Box>
+  </div>
   );
 };
 

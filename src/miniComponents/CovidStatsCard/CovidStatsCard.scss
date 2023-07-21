@@ -1,0 +1,67 @@
+.covid-stats-full-page {
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    .covid-kartica {
+        margin-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        &:hover {
+            transition: transform 0.3s ease;
+            transform: scale(1.1);
+        }
+       .continent {
+        margin-left: 10px;
+       }
+       .country {
+        margin-left: 10px;
+       }
+       .second-row {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 62%;
+
+        .population {
+            font-size: 20px;
+            span {
+            margin-left: 5px;
+            color: green;
+            border-color: green;
+            border-style: double;
+            border-width: 4px;
+            border-radius: 0.5rem;
+            padding: 7px;
+            }
+        }
+        .new-cases {
+            font-size: 20px;
+            span {
+            margin-left: 5px;
+            color: blue;
+            border-color: blue;
+            border-style: double;
+            border-width: 4px;
+            border-radius: 0.5rem;
+            padding: 7px;
+            }
+        }
+        .deaths {
+            font-size: 20px;
+            span {
+            margin-left: 5px;
+            color: rgb(3, 107, 3);
+            border-color: rgb(3, 107, 3);
+            border-style: double;
+            border-width: 4px;
+            border-radius: 0.5rem;
+            padding: 7px;
+            }
+        }
+       }
+    }
+}
