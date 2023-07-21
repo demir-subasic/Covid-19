@@ -3,6 +3,7 @@ import { facebook, instagram, twitter } from '../../assets'
 import './index.scss'
 import Footer from '../Footer/footer'
 
+
 const AboutUs = () => {
   return (
     <>
@@ -27,7 +28,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div className='about-us-card'>
-          <img src="" alt="" />
+          <img className='ensar' src="https://media.licdn.com/dms/image/D4D03AQEJ9Af4rHaOgQ/profile-displayphoto-shrink_200_200/0/1678302683265?e=1695254400&v=beta&t=n0iSrlYeWXoJh0oUJ-fmxXNPfevcsdgymZ_ItL91gCQ" alt="" />
           <h2 className='full-name'>Ensar Vragic</h2>
           <span>Web Developer</span>
           <p className='description'>
@@ -35,7 +36,7 @@ const AboutUs = () => {
           </p>
           <div className='social-media'>
           <a href=""><img src={facebook} alt="faceebok" /></a>
-          <a href=""><img src={instagram} alt="instagram" /></a>
+          <a href="https://www.instagram.com/vragicensar/"><img src={instagram} alt="instagram" /></a>
           <a href=""><img src={twitter} alt="instagram" /></a>
           </div>
         </div>
