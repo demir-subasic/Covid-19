@@ -43,7 +43,7 @@ const CovidStats = () => {
     }, []);
 
   return (
-    <div className='full-page'>
+    <div className='full-page-covid'>
       
       {
         covidStats.map((el) => (

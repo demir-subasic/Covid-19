@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import Skeleton from "@mui/material/Skeleton";
+import './CountryStatsCard.scss'
 
 export default function StateCard({
   countryName,
@@ -11,10 +12,10 @@ export default function StateCard({
 }) {
   let a = `https://cdn.jsdelivr.net/npm/svg-country-flags@1.2.10/svg/${countryImg}.svg`; //url for flag
   return (
-    <div className="  w-2/3  shadow-xl rounded p-4 ml-auto mr-auto mt-2 mb-2 grid grid-flow-row auto-rows-max bg-slate-50">
+    <div className="covid__card w-2/3  shadow-xl rounded p-4 ml-auto mr-auto mt-2 mb-2 grid grid-flow-row auto-rows-max bg-slate-50">
       <div className=" bg-white flex flex-col justify-center items-center row-span-1 p-2 rounded-md">
-        <div className=" flex justify-center gap-1 items-center bg-white rounded-md m-1 p-3">
-          <img src={a} className=" w-14 opacity-75 block" alt="border" />{" "}
+        <div className="covid__img flex justify-center gap-1 items-center bg-white rounded-md m-1 p-3">
+          <img src={a} className=" w-14 opacity-75 block" alt="border" style={{height: "50px", width: "50px"}} />{" "}
           <div className="  flex  items-baseline ">
             <h2 className=" font-bold text-2xl text-gray-600">{countryName}</h2>
           </div>
@@ -22,9 +23,9 @@ export default function StateCard({
       </div>
       {new_cases && new_death && new_recovered && total_active ? (
         <div className=" grid grid-rows-2">
-          <div className="grid grid-cols-3 gap-6  pt-2 pb-2 rounded  justify-evenly">
+          <div className=" covid__content grid grid-cols-3 gap-6  pt-2 pb-2 rounded  justify-evenly">
             <h4 className="grid grid-rows-2  bg-white rounded-lg text-base pt-3 pb-3">
-              <span className="inline-block text-2xl text-violet-500 font-bold text-center">
+              <span className="covid__span-one new__casesinline-block text-2xl text-violet-500 font-bold text-center">
                 {new_cases}
               </span>
               <span className="inline-block text-gray-500 font-medium text-center">
@@ -48,7 +49,12 @@ export default function StateCard({
               </span>
             </h4>
           </div>
-          <h4 className="text-xl grid grid-rows-2  bg-white rounded-lg p-3">
+          <h4 className="text-xl grid grid-rows-2  bg-white rounded-lg p-3" style={{
+              textAlign: "center",
+              margin: "3rem 0",
+              display: "flex",
+              flexDirection: "column"
+            }}>
             <span className="inline-block text-2xl text-gray-500 font-bold text-center">
               {total_active}
             </span>
