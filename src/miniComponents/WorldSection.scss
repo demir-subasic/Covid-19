@@ -17,7 +17,7 @@
 }
 
 .world-section-content{
-    margin: 0 3rem;
+    margin: 0 2rem;
     -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
     box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75);
@@ -46,6 +46,11 @@
     .third-number{
         color: blue;
         font-weight: bold;
+    }
+    .country-stats{
+        &:hover {
+            color: red;
+        }
     }
 }
 .world-section-content:hover{
